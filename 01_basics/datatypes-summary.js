@@ -7,7 +7,7 @@ const outsideTemp = null;
 let userEmail;
 const id = Symbol('123');
 const anotherId = Symbol('123');
-console.log(id === anotherId);
+// console.log(id === anotherId);
 const bigNumber = 3456789873456n
 
 // Non-Primitive Types:
@@ -19,9 +19,29 @@ let myObj = {
     age:23,
 }
 
-const myFunction = function(){
-    console.log("hello world");
+// const myFunction = function(){
+//     console.log("hello world");
     
+// }
+// console.log(typeof bigNumber);
+// console.log(typeof myFunction);
+
+
+// memory - stack(Primitive) and heap(Non-Primitive)
+let myyoutubename = "VishakhaBhardwaj";
+let anothername = myyoutubename;
+ anothername = "Nonchalant";
+// console.log(myyoutubename);
+// console.log(anothername);
+
+let userOne = {
+    email:"userone@google.com",
+    upi:"userone@ybl",
+
 }
-console.log(typeof bigNumber);
-console.log(typeof myFunction);
+let userTwo = userOne;
+userTwo.email = "vishakhabhardwaj@google.com";
+console.log(userTwo.email);
+console.log(userOne.email);
+
+
